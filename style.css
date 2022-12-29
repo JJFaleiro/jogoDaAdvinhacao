@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+    287.56deg,
+    #c2e9fb 0%,
+    #a1c4fd 100%
+  ); /*linha degrade (1º argumento é o sentido/angulo que a cor irá se posicionar, 2º argumento é a cor que começa é o 3º argumento é a cor que termina*/
+
+  display: grid; /*Display que torna maleável o posicionamento dos itens*/
+  place-items: center; /*Como só temos um elemento no body que é o main o place-items (colocar itens) no centro*/
+  height: 100vh; /*Aqui estamos estabelecendo que a altura o body é 100% da tela de visualização o h é de height (altura)*/
+  /* border: 1px solid red; teste com e sem o height para visualizar*/
+}
+
+.hide {
+  display: none;
+}
+
+body,
+button,
+input {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+
+  color: #34355b;
+}
+
+button {
+  font-weight: 700;
+
+  color: white;
+
+  /* width: 8.2rem; */
+  /* height: 5.3rem; */
+
+  background-color: #7879f1;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background-color: #6363ce;
+}
+
+main {
+  padding: 4.8rem 6.4rem 6.4rem;
+  background: #ffffff;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /*1º argumento eixo X; 2º argumento eixo Y de cima para baixo; 3º argumento blur (embaçado*/
+  border-radius: 0.6rem;
+
+  width: min(
+    42.8rem,
+    90%
+  ); /*Ou seja dependendo da responsividade, esta função min irá pegar o valor minimo entre esses dois, se couber será o primeiro argumento, mas apartir do momento que não couber irá pegar o segundo argumento*/
+
+  /* margin: 0 auto; substituido pelo displat grid*/
+
+  /* margin-top: -12rem; */
+
+  text-align: center;
+}
+
+
+
+/* screen1 */
+
+h1 {
+  font-family: 'Montserrat', sans-serif; /*sem serifa que significa que não tem curvaturas nos cantos das letras*/
+  font-weight: 600;
+
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  margin-bottom: 1.6rem;
+}
+
+h1,
+p, 
+h2 {
+  color: #34355b;
+}
+
+p {
+  opacity: 0.8;
+}
+
+form {
+  display: flex;
+  /* width: fit-content; */
+  justify-content: center;
+  margin: 4.8rem auto 0;
+}
+
+input,
+button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  width: 7rem;
+  /* height: 5.3rem; */
+
+  background-color: #dce2e9;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+
+
+/* screen2 */
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: 0.4rem;
+
+}
